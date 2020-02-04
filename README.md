@@ -1,7 +1,29 @@
-# Text Correction Toolkit  
+<h1 align="center">
+Text Correction Toolkit
+</h1>
+
+<img src="https://user-images.githubusercontent.com/9976294/73755171-89f09f00-475d-11ea-9615-4a43ec4d522d.png" alt="Screenshot" align="center"/>
 
 
-## Setup
+
+## Table of Contents
+<!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
+<details>
+<summary>Click to expand</summary>
+
+1. [Introduction](#1-introduction)
+2. [Setup](#2-setup)
+3. [License](#3-license)
+4. [References](#4-references)
+
+</details>
+<!-- ⛔️ MD-MAGIC-EXAMPLE:END -->
+
+
+## 1 Introduction
+
+## 2 Setup
+
 ### Install Python 3.8
 Run the following commands as root or user with sudo access to update the packages list and install the prerequisites:
 
@@ -61,3 +83,10 @@ export FLASK_DEBUG=1
 ```bash
 flask run
 ````
+
+## License
+This project is licensed under the GNU General Public License, Version 3.0 - see the [LICENSE](LICENSE) file for details.
+
+<p align="center">
+🌟 PLEASE STAR THIS REPO IF YOU FOUND SOMETHING INTERESTING 🌟
+</p>

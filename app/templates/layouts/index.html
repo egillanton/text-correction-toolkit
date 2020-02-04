@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home - {{ super() }}
+{% endblock %}
+
+
+{% block content %}
+<div class="main-wrapper">
+    <div class="container-fluid vh-100 vw-100">
+        <div class="row h-10">
+            <!-- Dragzone-->
+            <div id="dz-container" class="col m-2">
+                <div class="row" id="uploadImageContainer">
+                    <div id="dz-message" class="col">
+                        <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                        Upload a receipt here<br>
+                        <small><strong>Supported files:</strong> JPEG/JPG/PNG images and PDF documents.</small>
+                    </div>
+                    <div class="w-100"></div>
+                    <div id="dz-error-message" class="col" style="display:none;">
+                        <i class="fas fa-exclamation-triangle fa-fw"></i>
+                        Error
+                    </div>
+                    <div class="w-100"></div>
+                    <div id="dz-upload-success-message" class="col" style="display:none;">
+                        <i class="fas fa-check-circle fa-fw"></i>
+                        Your receipt finished uploading
+                    </div>
+                </div>
+                <input type="file" id="dz-button" onchange="previewFile()" />
+            </div>
+        </div>
+        <div class="row h-90">
+            <div class="col p-1  img-preview-container stylish-color">
+                <span class="helper"></span>
+                <img id="image_preview" src="" />
+            </div>
+            <div class="col unique-color p-1 border">
+                <textarea class="boxsizingBorder" name="source_text_area" id="source_text_area" readonly></textarea>
+            </div>
+            <div class="col-lg-auto px-0 border">
+                <button type="button" id="get_text_from_source_btn" class="btn btn-primary px-3" style="display: block;"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                <button type="button" id="save_target_btn" class="btn btn-success px-3" style="display: block;"><i class="far fa-save" aria-hidden="true"></i></button>
+            </div>
+            <div class="col special-color p-1 border">
+                <textarea class="boxsizingBorder" name="target_text_area" id="target_text_area"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

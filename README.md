@@ -21,6 +21,7 @@ Text Correction Toolkit
 
 
 ## 1 Introduction
+This is a frontend tool used for text correction on extracted OCR text from images. Runs on top of a Flask Micro-Web Server
 
 ## 2 Setup
 
@@ -84,8 +85,13 @@ export FLASK_DEBUG=1
 flask run
 ````
 
-## License
+## 3. License
 This project is licensed under the GNU General Public License, Version 3.0 - see the [LICENSE](LICENSE) file for details.
+
+## 4. References
+* [egillanton/flask-receipt-scanner](https://github.com/egillanton/flask-receipt-scanner)
+* [enyo/dropzone/](https://github.com/enyo/dropzone/)
+
 
 <p align="center">
 🌟 PLEASE STAR THIS REPO IF YOU FOUND SOMETHING INTERESTING 🌟
